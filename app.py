@@ -58,7 +58,8 @@ final_scaled_data=standard_scaler.transform(final_data)
 #predict the output
 prediction=model.predict(final_scaled_data)
 
-st.write(f'ExpectedSalary of the customer is {real_salary}')
+st.write(f'ExpectedSalary of the customer is {prediction}')
+
 
 
 
