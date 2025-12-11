@@ -1,0 +1,9 @@
+tensorflow
+keras
+torch
+numpy
+pandas
+tensorboard
+pickle
+streamlit
+scikitlearn
