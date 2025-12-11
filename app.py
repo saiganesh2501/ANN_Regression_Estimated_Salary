@@ -57,6 +57,7 @@ final_data=pd.concat([data.drop(['Geography'],axis=1),geo_encoded],axis=1)
 final_scaled_data=standard_scaler.transform(final_data)
 #predict the output
 prediction=model.predict(final_scaled_data)
-real_salary=standard_scaler.inverse_transform(prediction)
+real_salary=standard_scaler.inverse_transform(prediction[0][0])
 
-st.write(f'ExpectedSalary of the customer is {real_salary[0][0]}')
+st.write(f'ExpectedSalary of the customer is {real_salary}')
+
