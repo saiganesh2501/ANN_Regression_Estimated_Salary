@@ -5,4 +5,5 @@ numpy
 pandas
 tensorboard
 streamlit
-scikitlearn
+scikit-learn
+
